@@ -19,7 +19,7 @@ const sorted = [...PRODUCTS].sort((a, b) => a.price - b.price);// Trie les produ
 console.log("Tri par prix croissant :", sorted.map(p => p.name));// Affiche les noms des produits triés par prix
 
 
-const delay = (ms) => new Promise(res => setTimeout(res, ms));// fait une attente asynchrone mais j'ai pas bien saisie cette notion
+const delay = (ms) => new Promise(res => setTimeout(res, ms));//ee que j'iai compris c'est qu'elle fait une attente asynchrone mais j'ai pas bien saisie cette notion
 
 const addProduct = async (list, newP) => {
   await delay(300);
@@ -38,3 +38,4 @@ const newList = await addProduct(PRODUCTS, {
 
 console.log("Après ajout :", newList.length, "produits");//cela affiche le nombre de produits apres l'ajout
 console.log("les noms des produits:",PRODUCTS.map(p => p.name));//je voulais juste verifier que l'ancien tableau n'a pas ete modifie
+
